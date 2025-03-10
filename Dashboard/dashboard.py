@@ -6,12 +6,12 @@ import seaborn as sns
 # Load Data
 @st.cache_data
 def load_dataHarian():
-    df = pd.read_csv("data_harian.csv")  # Pastikan file main_data.csv sudah tersedia
+    df = pd.read_csv("Dashboard/data_harian.csv")  # Pastikan file main_data.csv sudah tersedia
     df['dteday'] = pd.to_datetime(df['dteday'])  # Konversi tanggal
     return df
 
 def load_dataJam():
-    df = pd.read_csv("data_jam.csv")  # Pastikan file main_data.csv sudah tersedia
+    df = pd.read_csv("Dashboard/data_jam.csv")  # Pastikan file main_data.csv sudah tersedia
     df['dteday'] = pd.to_datetime(df['dteday'])  # Konversi tanggal
     return df
 
