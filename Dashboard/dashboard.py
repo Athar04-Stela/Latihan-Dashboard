@@ -12,7 +12,7 @@ def load_dataHarian():
 
 @st.cache_data
 def load_dataJam():
-    df = pd.read_csv("data_jam.csv")
+    df = pd.read_csv("Dashboard/data_jam.csv")
     df['dteday'] = pd.to_datetime(df['dteday'])
     return df
 
