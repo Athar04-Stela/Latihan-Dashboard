@@ -6,7 +6,7 @@ import seaborn as sns
 # Load Data
 @st.cache_data
 def load_dataHarian():
-    df = pd.read_csv("data_harian.csv")
+    df = pd.read_csv('data_harian.csv')
     df['dteday'] = pd.to_datetime(df['dteday'])
     return df
 
